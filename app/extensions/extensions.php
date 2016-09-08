@@ -120,7 +120,8 @@
 	$sql .= "where domain_uuid = '$domain_uuid' ";
 	$sql .= $sql_mod; //add search mod from above
 	if (strlen($order_by) > 0) {
-		$sql .= ($order_by == 'extension') ? "order by $order_text ".$order." " : "order by ".$order_by." ".$order." ";
+		$sql .= "order by ".$order_by." ".$order." ";
+		//$sql .= ($order_by == 'extension') ? "order by $order_text ".$order." " : "order by ".$order_by." ".$order." ";
 	}
 	else {
 		$sql .= "order by $order_text ";
