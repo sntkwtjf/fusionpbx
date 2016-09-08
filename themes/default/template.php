@@ -453,6 +453,7 @@
 							<?php
 							foreach ($menu_array as $index_main => $menu_parent) {
 								$submenu = false;
+								$mod_li=$mod_a_1=""; // new add
 								if (is_array($menu_parent['menu_items']) && sizeof($menu_parent['menu_items']) > 0) {
 									$mod_li = "class='dropdown' ";
 									$mod_a_1 = "class='dropdown-toggle text-left' data-toggle='dropdown' ";
